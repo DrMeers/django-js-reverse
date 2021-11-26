@@ -118,7 +118,7 @@ def generate_json(default_urlresolver, script_prefix=None):
             [
                 force_str(name),
                 [
-                    [force_str(path), [force_text(arg) for arg in args]]
+                    [force_str(path), [force_str(arg) for arg in args]]
                     for path, args in patterns
                 ],
             ] for name, patterns in urls
